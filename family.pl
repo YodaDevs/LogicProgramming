@@ -1,11 +1,11 @@
 mãe(marcia,marcus).
-mãe(marcia,mary).
+mãe(marcia,mara).
 mãe(marcia,meiry).
 mãe(marcia,neide).
 mãe(neide,mateus).
 mãe(neide,joão).
 pai(mauro,marcus).
-pai(mauro,mary).
+pai(mauro,mara).
 pai(mauro,meiry).
 pai(mauro,neide).
 avô(X, Y) :- pai(X, Z), pai(Z, Y); pai(X, Z), mãe(Z,Y).
