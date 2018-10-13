@@ -1,12 +1,12 @@
 % Fatos.
 
-mãe(marcia,marcus).
-mãe(marcia,mary).
-mãe(marcia,meiry).
-mãe(marcia,neide).
+mae(marcia,marcus).
+mae(marcia,mary).
+mae(marcia,meiry).
+mae(marcia,neide).
 
-mãe(neide,mateus).
-mãe(neide,joão).
+mae(neide,mateus).
+mae(neide,joão).
 
 pai(mauro,marcus).
 pai(mauro,mary).
@@ -24,7 +24,7 @@ homem(mateus).
 homem(joão).
 
 % Regras
-avô(X, Y) :- pai(X, Z), pai(Z, Y); pai(X, Z), mãe(Z,Y).
-avó(X, Y) :- mãe(X, Z), mãe(Z, Y); mãe(X, Z), pai(Z,Y).
-irmao(X,Y) :- mãe(Z,X), mãe(Z,Y), homem(X); pai(Z,X), mãe(Z,Y), homem(X).
-irma(X,Y) :- mãe(Z,X), mãe(Z,Y), mulher(X); pai(Z,X), mãe(Z,Y), mulher(X).
+avô(X, Y) :- pai(X, Z), pai(Z, Y); pai(X, Z), mae(Z,Y).
+avó(X, Y) :- mae(X, Z), mae(Z, Y); mae(X, Z), pai(Z,Y).
+irmao(X,Y) :- mae(Z,X), mae(Z,Y), homem(X); pai(Z,X), mae(Z,Y), homem(X).
+irma(X,Y) :- mae(Z,X), mae(Z,Y), mulher(X); pai(Z,X), mae(Z,Y), mulher(X).
